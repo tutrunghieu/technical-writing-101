@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\title{An example of using many bibtex files}
+\author{Henry T.H. Tu}
+\date{01-jan-2016}
+
+\begin{document}
+\maketitle
+
+\section{Testing the citations}
+If you see question marks, it does not work. If you see numbers in square brackets, it works.
+\cite{DBLP:conf/caip/AmengualBR15,DBLP:conf/icinco/BoschCRF12}
+
+\section{Downloading the bibtex files}
+You can go to http://dblp.uni-trier.de/pers/ to choose one person and download all the citations
+
+\section{Using the bibtex files}
+
+Include all the files with the command $\backslash$bibliography\{file1,file2,file3\}
+
+\nocite{*}
+
+
+\bibliographystyle{plain}
+\bibliography{ref-Bosch-Anna,ref-Lazebnik-Svetlana,ref-Torralba-Antonio,ref-Vogel-Julia}
+
+\end{document}
